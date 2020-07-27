@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   android:background="@drawable/bg_note_list"
+                                                   android:paddingTop="18dp" android:paddingBottom="22dp">
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:ellipsize="end"
+            android:maxLines="2" android:singleLine="false"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/tv_note_list_content" android:textSize="16sp"
+            android:textColor="@color/colorFontDefault" android:text="@string/default_text" android:paddingLeft="24dp"
+            android:paddingRight="24dp" android:lineSpacingMultiplier="1.2"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/tv_notelist_time"
+            app:layout_constraintTop_toBottomOf="@+id/tv_note_list_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:textSize="12sp" android:textColor="@color/colorFontGrey"
+            android:paddingLeft="24dp" android:paddingRight="24dp" android:text="@string/default_text"
+            android:layout_marginTop="5dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

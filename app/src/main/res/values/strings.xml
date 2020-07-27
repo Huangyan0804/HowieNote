@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Howie Note</string>
+    <string name="default_text">TEST</string>
+    <string name="edit_text_hint">Write Something…</string>
+</resources>
