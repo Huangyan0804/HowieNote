@@ -137,13 +137,10 @@ public class EditNoteActivity extends BaseActivity {
     }
 
     @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            switchReturnMode();
-            finish();
-            return true;
-        }
-        return super.onKeyDown(keyCode, event);
+    public void onBackPressed() {
+        switchReturnMode();
+        finish();
+        super.onBackPressed();
     }
 
     public String dateToStr() {

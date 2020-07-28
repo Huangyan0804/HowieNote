@@ -3,6 +3,7 @@ package com.hcode.howienote.activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -211,7 +212,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener
     public boolean onNavigationItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.side_menu_settings:
-                startActivity(new Intent(mContext, SettingActivity.class));
+                startActivity(new Intent(mContext, SettingsActivity.class));
+                mDrawerLayout.closeDrawer(GravityCompat.START);
                 break;
             case R.id.side_menu_logcat:
                 break;
